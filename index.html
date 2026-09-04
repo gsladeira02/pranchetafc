@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07140f" />
+  <meta name="description" content="Prancheta — manager de futebol independente para Windows. Baixe o jogo e assuma o controle do seu clube." />
+  <meta property="og:title" content="Prancheta — Manager de Futebol" />
+  <meta property="og:description" content="Seu clube. Suas decisões. Sua história." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pranchetafc.app.br/" />
+  <meta property="og:image" content="https://pranchetafc.app.br/og-image.svg" />
+  <link rel="canonical" href="https://pranchetafc.app.br/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Prancheta — Manager de Futebol</title>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Prancheta, início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 48" role="img">
+          <path d="M22 2 40 9v13c0 11.2-6.8 19.8-18 24C10.8 41.8 4 33.2 4 22V9L22 2Z"/>
+          <path class="brand-ball" d="M22 13.5 28.2 18l-2.4 7.3h-7.6L15.8 18 22 13.5Zm-10.1 7.7 6.3 4.1-2.4 7.3-6.7-.4m25.8 0-6.7.4-2.4-7.3 6.3-4.1M16 38l2.2-5.4h7.6L28 38"/>
+        </svg>
+      </span>
+      <span>PRANCHETA</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#instalacao">Instalação</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <a class="mini-download" href="#download">Baixar</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> MANAGER DE FUTEBOL PARA WINDOWS</div>
+        <h1>Seu clube.<br><em>Suas decisões.</em><br>Sua história.</h1>
+        <p class="hero-text">
+          Comande elenco, táticas, mercado, competições e partidas em um manager de futebol
+          independente feito para quem gosta de viver cada decisão do clube.
+        </p>
+
+        <div class="hero-actions" id="download">
+          <a class="btn btn-primary is-disabled" id="downloadButton" href="#" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2"/></svg>
+            <span>
+              <small id="downloadKicker">DOWNLOAD</small>
+              <strong id="downloadLabel">Em breve</strong>
+            </span>
+          </a>
+          <a class="btn btn-secondary" href="#instalacao">Como instalar</a>
+        </div>
+
+        <div class="download-meta">
+          <span>Windows</span>
+          <span class="dot">•</span>
+          <span id="versionText">Versão em preparação</span>
+          <span class="dot">•</span>
+          <span>Projeto independente</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Prévia conceitual do Prancheta">
+        <div class="visual-glow"></div>
+        <div class="app-window">
+          <div class="app-bar">
+            <div class="app-logo"><span>P</span> PRANCHETA</div>
+            <div class="window-dots"><i></i><i></i><i></i></div>
+          </div>
+          <div class="app-grid">
+            <aside class="mock-sidebar">
+              <b>INÍCIO</b><span>Elenco</span><span>Táticas</span><span>Mercado</span>
+              <span>Competições</span><span>Treino</span>
+            </aside>
+            <div class="mock-content">
+              <div class="mock-head">
+                <div><small>PRÓXIMA PARTIDA</small><strong>Campeonato Nacional</strong></div>
+                <span class="mock-date">SÁB • 19:00</span>
+              </div>
+              <div class="match-card">
+                <div class="team"><i>SC</i><b>Seu Clube</b></div>
+                <div class="versus"><small>RODADA 12</small><strong>VS</strong><span>Casa</span></div>
+                <div class="team"><i>FC</i><b>Adversário</b></div>
+              </div>
+              <div class="mock-bottom">
+                <div class="pitch">
+                  <span class="player p1"></span><span class="player p2"></span><span class="player p3"></span>
+                  <span class="player p4"></span><span class="player p5"></span><span class="player p6"></span>
+                  <span class="player p7"></span><span class="player p8"></span><span class="player p9"></span>
+                  <span class="player p10"></span><span class="player p11"></span>
+                </div>
+                <div class="mock-stats">
+                  <small>FORMAÇÃO</small><strong>4-2-3-1</strong>
+                  <small>PLANO DE JOGO</small><strong>Equilibrado</strong>
+                  <div class="stat-line"><span>Energia</span><b>92%</b></div>
+                  <div class="stat-line"><span>Moral</span><b>Alta</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card fc-one"><small>MERCADO</small><b>Negocie seu elenco</b></div>
+        <div class="floating-card fc-two"><small>TÁTICAS</small><b>Decida cada detalhe</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>OFFLINE</strong><span>Jogue sem depender da internet</span></div>
+      <div><strong>CARREIRA</strong><span>Temporadas, competições e evolução</span></div>
+      <div><strong>CONTROLE</strong><span>Tática, elenco e gestão do clube</span></div>
+    </section>
+
+    <section class="section" id="recursos">
+      <div class="section-heading">
+        <span class="section-kicker">DENTRO DO JOGO</span>
+        <h2>Você toma as decisões.</h2>
+        <p>Do planejamento da semana ao apito final, o clube passa pelas suas escolhas.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature featured">
+          <div class="feature-icon">01</div>
+          <h3>Partidas e táticas</h3>
+          <p>Ajuste o time, acompanhe os acontecimentos e mude sua estratégia durante a partida.</p>
+          <div class="mini-pitch" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">02</div>
+          <h3>Mercado</h3>
+          <p>Pesquise jogadores, negocie transferências e monte um elenco de acordo com o seu projeto.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">03</div>
+          <h3>Gestão de elenco</h3>
+          <p>Acompanhe energia, desempenho, evolução, contratos e decisões que impactam a temporada.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">04</div>
+          <h3>Competições</h3>
+          <p>Classificações, calendário e confrontos organizados para acompanhar toda a temporada.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">05</div>
+          <h3>Carreira</h3>
+          <p>Construa sua trajetória por várias temporadas e lide com as consequências de cada escolha.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">06</div>
+          <h3>Projeto independente</h3>
+          <p>Um manager feito com foco em profundidade, evolução contínua e experiência para quem gosta do gênero.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section install-section" id="instalacao">
+      <div class="section-heading">
+        <span class="section-kicker">INSTALAÇÃO</span>
+        <h2>Comece em poucos passos.</h2>
+        <p>Quando a versão pública estiver disponível, o download oficial ficará sempre nesta página.</p>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>1</span>
+          <div><h3>Baixe pelo site oficial</h3><p>Use o botão de download no topo desta página.</p></div>
+        </article>
+        <article>
+          <span>2</span>
+          <div><h3>Execute o instalador</h3><p>Abra o arquivo do Prancheta e siga as etapas de instalação do Windows.</p></div>
+        </article>
+        <article>
+          <span>3</span>
+          <div><h3>Abra e crie sua carreira</h3><p>Depois de instalado, abra o Prancheta e comece um novo jogo.</p></div>
+        </article>
+      </div>
+
+      <div class="security-note">
+        <div class="security-icon">✓</div>
+        <div>
+          <strong>Baixe somente pelo pranchetafc.app.br</strong>
+          <p>O site oficial será a referência para obter o instalador e futuras versões do Prancheta.</p>
+          <p class="hash-row" id="hashRow" hidden>SHA-256: <code id="hashText"></code></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading compact">
+        <span class="section-kicker">DÚVIDAS</span>
+        <h2>Perguntas frequentes.</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>O Prancheta precisa de internet para jogar?<span>+</span></summary>
+          <p>O objetivo do Prancheta é funcionar como jogo desktop. Recursos de atualização ou download podem exigir internet, mas a experiência principal é local.</p>
+        </details>
+        <details>
+          <summary>Onde devo baixar novas versões?<span>+</span></summary>
+          <p>Sempre use este site oficial: pranchetafc.app.br. Evite instaladores distribuídos por páginas ou links desconhecidos.</p>
+        </details>
+        <details>
+          <summary>O Windows pode mostrar um aviso ao instalar?<span>+</span></summary>
+          <p>Aplicativos novos ou com pouca reputação de download podem receber alertas do Windows. Confira se o arquivo veio deste domínio antes de continuar.</p>
+        </details>
+        <details>
+          <summary>Como saberei qual versão estou baixando?<span>+</span></summary>
+          <p>A versão publicada aparece junto ao botão de download. Quando disponível, também exibiremos a identificação do arquivo para conferência.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <span>PRONTO PARA ASSUMIR O CLUBE?</span>
+      <h2>A prancheta está na sua mão.</h2>
+      <a class="btn btn-primary is-disabled" id="downloadButtonBottom" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2"/></svg>
+        <span><small>DOWNLOAD</small><strong id="downloadLabelBottom">Em breve</strong></span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 48"><path d="M22 2 40 9v13c0 11.2-6.8 19.8-18 24C10.8 41.8 4 33.2 4 22V9L22 2Z"/></svg>
+      </span>
+      <span>PRANCHETA</span>
+    </a>
+    <p>Projeto independente de manager de futebol.</p>
+    <small>© <span id="year"></span> Prancheta. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="/site-config.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><radialGradient id="g"><stop stop-color="#1b7a45"/><stop offset="1" stop-color="#06100c"/></radialGradient></defs>
+<rect width="1200" height="630" fill="#06100c"/><circle cx="930" cy="120" r="520" fill="url(#g)" opacity=".42"/>
+<path d="M140 112 214 141v56c0 49-28 84-74 101-46-17-74-52-74-101v-56l74-29Z" fill="#58e38e"/>
+<text x="260" y="208" font-family="Arial, sans-serif" font-size="65" font-weight="800" fill="#f4f7f5" letter-spacing="8">PRANCHETA</text>
+<text x="68" y="390" font-family="Arial, sans-serif" font-size="73" font-weight="800" fill="#f4f7f5">Seu clube. Suas decisões.</text>
+<text x="68" y="470" font-family="Arial, sans-serif" font-size="73" font-weight="800" fill="#58e38e">Sua história.</text>
+<text x="72" y="545" font-family="Arial, sans-serif" font-size="25" fill="#9aaba2">Manager de futebol independente para Windows • pranchetafc.app.br</text>
+</svg>
