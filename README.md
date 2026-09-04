@@ -1,43 +1,46 @@
-# Site oficial do Prancheta
+# Site oficial do Prancheta FC
 
-Site estático preparado para `https://pranchetafc.app.br`.
+Domínio principal:
+`https://pranchetafc.app.br`
 
-## Publicar sem npm e sem terminal
+Download configurado:
+`https://download.pranchetafc.app.br/Instalador-Prancheta-FC.exe`
 
-1. Descompacte o ZIP.
-2. Acesse o Vercel e crie um projeto usando o fluxo de upload/Drop.
-3. Envie a pasta `pranchetafc-site` ou o ZIP.
-4. Depois que o endereço `.vercel.app` funcionar, abra o projeto no Vercel.
-5. Vá em **Settings → Domains** e adicione:
-   - `pranchetafc.app.br`
-   - `www.pranchetafc.app.br` (opcional)
-6. O próprio Vercel mostrará os registros DNS exatos que devem ser cadastrados no provedor onde o domínio foi comprado.
+## Arquitetura
 
-## Ativar o botão de download
+- Site: GitHub Pages
+- Instalador: Cloudflare R2
+- Domínio do site: pranchetafc.app.br
+- Subdomínio do download: download.pranchetafc.app.br
 
-Abra o arquivo `site-config.js` e preencha:
+## Publicação do site no GitHub Pages
 
-```js
-window.PRANCHETA_CONFIG = {
-  version: "0.3.0",
-  downloadUrl: "https://SEU-LINK/Prancheta-Setup.exe",
-  fileName: "Prancheta-Setup-0.3.0.exe",
-  sha256: "HASH_SHA256_DO_ARQUIVO"
-};
-```
+1. Crie/abra um repositório público no GitHub.
+2. Envie TODOS os arquivos desta pasta para a raiz do repositório.
+3. Abra Settings → Pages.
+4. Em Source/Build and deployment, escolha Deploy from a branch.
+5. Selecione a branch `main` e a pasta `/ (root)`.
+6. Salve.
+7. Em Custom domain, use `pranchetafc.app.br`.
 
-Enquanto `downloadUrl` estiver vazio, o botão mostra **Em breve** e fica desativado.
+O arquivo `CNAME` já está incluído e configurado.
 
-## Arquivos
+## Cloudflare R2
 
-- `index.html`: página principal
-- `styles.css`: visual e responsividade
-- `site-config.js`: versão e link do instalador
-- `script.js`: comportamento do botão e detalhes dinâmicos
-- `favicon.svg`: ícone provisório
-- `og-image.svg`: prévia ao compartilhar o site
-- `vercel.json`: configuração simples para Vercel
+Crie um bucket e envie o instalador com este nome EXATO:
 
-## Logo
+`Instalador-Prancheta-FC.exe`
 
-O site usa um símbolo provisório estilizado. Quando a logo oficial do Prancheta for adicionada, substitua o `favicon.svg` e o símbolo do cabeçalho ou envie a logo para que o layout seja atualizado.
+Depois, em Settings → Public access → Custom Domains, conecte:
+
+`download.pranchetafc.app.br`
+
+O botão do site já aponta para:
+
+`https://download.pranchetafc.app.br/Instalador-Prancheta-FC.exe`
+
+## SHA-256
+
+`6a4ab1654e74140b0576906e03e1612ad3e9f87fe122ebe85bd0d744c068add1`
+
+Tamanho aproximado do instalador enviado: 223.1 MB
